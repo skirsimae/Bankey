@@ -15,6 +15,7 @@
 		CDC3DFF5298D11D600D1FE30 /* BankeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFF4298D11D600D1FE30 /* BankeyUITests.swift */; };
 		CDC3DFF7298D11D600D1FE30 /* BankeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFF6298D11D600D1FE30 /* BankeyUITestsLaunchTests.swift */; };
 		CDC3E00A298D166D00D1FE30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3E009298D166D00D1FE30 /* LoginView.swift */; };
+		CDC3E00D2991366C00D1FE30 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3E00C2991366C00D1FE30 /* OnboardingContainerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CDC3DFF4298D11D600D1FE30 /* BankeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankeyUITests.swift; sourceTree = "<group>"; };
 		CDC3DFF6298D11D600D1FE30 /* BankeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CDC3E009298D166D00D1FE30 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CDC3E00C2991366C00D1FE30 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CDC3DFD2298D11D300D1FE30 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				CDC3E00B2991365500D1FE30 /* Onboarding */,
 				CDC3E004298D15D100D1FE30 /* Files */,
 				CDC3E007298D162C00D1FE30 /* Login */,
 				CDC3DFD3298D11D300D1FE30 /* AppDelegate.swift */,
@@ -138,6 +141,14 @@
 				CDC3E009298D166D00D1FE30 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CDC3E00B2991365500D1FE30 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CDC3E00C2991366C00D1FE30 /* OnboardingContainerViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				CDC3E00A298D166D00D1FE30 /* LoginView.swift in Sources */,
 				CDC3DFD8298D11D300D1FE30 /* LoginViewController.swift in Sources */,
 				CDC3DFD4298D11D300D1FE30 /* AppDelegate.swift in Sources */,
+				CDC3E00D2991366C00D1FE30 /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
