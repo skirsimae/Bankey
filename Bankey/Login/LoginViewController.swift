@@ -8,10 +8,11 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -23,6 +24,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         style()
         layout()
     }
@@ -79,13 +81,14 @@ extension LoginViewController {
             assertionFailure("Username / password missing")
             return
         }
-        
+
         if username.isEmpty || password.isEmpty {
             configureView(with: "Username / password cannot be blank")
         }
-        
+
         if username == "Kevin" && password == "Welcome" {
             signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
         } else {
             configureView(with: "Incorrect username / password")
         }
@@ -95,5 +98,9 @@ extension LoginViewController {
         errorMessageLabel.isHidden = false
         errorMessageLabel.text = message
     }
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
 }
 
