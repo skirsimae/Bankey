@@ -68,3 +68,7 @@ extension OnboardingViewController {
     }
     
 }
+
+protocol OnboardingViewControllerDelegate: AnyObject {
+    func didFinishOnboarding()
+}
