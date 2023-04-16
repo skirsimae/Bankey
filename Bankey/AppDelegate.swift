@@ -31,13 +31,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        setRootViewController(onboardingContainerViewController)
+        if LocalState.hasOnboarded {
+            setRootViewController(dummyViewController)
+        } else {
+            setRootViewController(onboardingContainerViewController)
+        }
     }
 }
 
 extension AppDelegate: OnboardingViewControllerDelegate {
     func didFinishOnboarding() {
-        print("did finish onboarding")
+        LocalState.hasOnboarded = true
         setRootViewController(dummyViewController)
     }
 }
