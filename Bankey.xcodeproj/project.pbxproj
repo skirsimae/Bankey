@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDACE0C929EC2C31006C7260 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDACE0C829EC2C31006C7260 /* DummyViewController.swift */; };
 		CDC3DFD4298D11D300D1FE30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFD3298D11D300D1FE30 /* AppDelegate.swift */; };
 		CDC3DFD8298D11D300D1FE30 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFD7298D11D300D1FE30 /* LoginViewController.swift */; };
 		CDC3DFDD298D11D500D1FE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC3DFDC298D11D500D1FE30 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDACE0C829EC2C31006C7260 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		CDC3DFD0298D11D300D1FE30 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC3DFD3298D11D300D1FE30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC3DFD7298D11D300D1FE30 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				CDC3DFD7298D11D300D1FE30 /* LoginViewController.swift */,
 				CDC3E009298D166D00D1FE30 /* LoginView.swift */,
+				CDACE0C829EC2C31006C7260 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC3E00A298D166D00D1FE30 /* LoginView.swift in Sources */,
+				CDACE0C929EC2C31006C7260 /* DummyViewController.swift in Sources */,
 				CDC3DFD8298D11D300D1FE30 /* LoginViewController.swift in Sources */,
 				CDC3E00F2991405300D1FE30 /* OnboardingViewController.swift in Sources */,
 				CDC3DFD4298D11D300D1FE30 /* AppDelegate.swift in Sources */,

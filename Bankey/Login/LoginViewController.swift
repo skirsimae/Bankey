@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogOut()
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginViewController: UIViewController {
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
@@ -27,6 +35,10 @@ class LoginViewController: UIViewController {
         
         style()
         layout()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        signInButton.configuration?.showsActivityIndicator = false
     }
 }
 
@@ -99,8 +111,3 @@ extension LoginViewController {
         errorMessageLabel.text = message
     }
 }
-
-protocol LoginViewControllerDelegate: AnyObject {
-    func didLogin()
-}
-
